@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'MorePerfectDOSVGA';
+    src: url('../assets/MorePerfectDOSVGA.ttf') format('truetype');
+}
+
+/* Hide scrollbars for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbars for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body {
+    background-color: black;
+    color: #bbbbbb;
+    font-family: 'MorePerfectDOSVGA', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Index page specific */
+.index-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-container > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text elements */
+.text {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.text:first-child {
+    margin-top: 0;
+}
+
+/* Blog post content */
+.article-content, article, .post-content {
+    text-align: justify;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.article-content p, article p, .post-content p {
+    text-align: justify;
+    margin-bottom: 1em;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+/* Sections */
+.section {
+    margin: 25px 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.section-title {
+    color: #bbbbbb;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.section p {
+    text-align: justify;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+/* Code blocks */
+.code-box, .terminal {
+    background-color: #111;
+    border: 1px solid #333;
+    margin: 15px 0;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.code-title {
+    color: #bbbbbb;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    font-family: 'MorePerfectDOSVGA', monospace;
+    font-size: 14px;
+}
+
+/* Links */
+a {
+    color: #bbbbbb;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #ffffff;
+    border-bottom-color: #bbbbbb;
+}
+
+/* Separator */
+.separator {
+    color: #bbbbbb;
+    margin: 20px 0;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/* References */
+.refs {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.refs li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.refs a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    .section {
+        margin: 20px 0;
+    }
+    
+    .code-box, .terminal {
+        margin: 10px 0;
+        padding: 10px;
+    }
+} 

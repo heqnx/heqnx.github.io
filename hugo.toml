@@ -1,0 +1,11 @@
+baseURL         = "https://heqnx.com"
+languageCode    = "en-us"
+title           = "heqnx"
+theme           = "dos-theme"
+publishDir      = "docs"
+disableKinds    = ["taxonomy", "section", "RSS", "sitemap"]
+
+[params]
+  contacts = [
+    "root@heqnx.com",
+  ] 

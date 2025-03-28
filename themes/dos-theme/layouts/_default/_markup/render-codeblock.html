@@ -1,0 +1,11 @@
+{{ $lang := .Attributes.lang }}
+{{ if $lang }}
+<div class="code-box">
+    <div class="code-title">{{ $lang }}</div>
+    <pre><code>{{ .Inner }}</code></pre>
+</div>
+{{ else }}
+<div class="terminal">
+    <pre><code>{{ .Inner }}</code></pre>
+</div>
+{{ end }} 

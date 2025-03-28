@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <div class="index-container">
+        <div>
+            <div class="text">red team ops ░ pentesting ░ phishing ░ maldev</div>
+            {{ range .Site.Params.contacts }}
+                <div class="text">{{ . }}</div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }} 
